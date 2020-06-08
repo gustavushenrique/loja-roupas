@@ -11,15 +11,17 @@
 	<div class="container-fluid">
 		<c:import url="/common/titulo.jsp" />
 		<div class="row">
-			<c:import url="/common/sidebar.jsp" /> <!-- SideBar é col-3 -->
+			<div class="col-3">
+				<c:import url="/common/sidebar.jsp" />
+			</div>
 			<div class="col-9">
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<h3>Página Principal</h3>
+							<h3>Catalogo</h3>
 						</div>
 					</div>
-					<p>Boas vindas</p>
+					<p>Produtos a serem exibidos daqui a pouco</p>
 				</div>
 			</div>
 		</div>

@@ -11,7 +11,8 @@
 	<div class="container-fluid">
 		<c:import url="/common/titulo.jsp" />
 		<div class="row">
-			<c:import url="/common/sidebar.jsp" /> <!-- SideBar é col-3 -->
+			<c:import url="/common/sidebar.jsp" />
+			<!-- SideBar é col-3 -->
 			<div class="col-9">
 				<div class="container">
 					<div class="row">

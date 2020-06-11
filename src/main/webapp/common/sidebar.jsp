@@ -5,8 +5,15 @@
 <div class="col-3">
 	<nav id="sidebar">
 		<ul class="list-unstyled">
-			<li><a href="<c:url value="/"/>">Principal</a></li>
-			<li><a href="<c:url value="/catalogo"/>">Catálogo</a></li>
+			<div>
+				<li><a class="btn btn-dark btn-lg m-1"
+					href="<c:url value="/"/>">Principal</a></li>
+			</div>
+
+			<div>
+				<li><a class="btn btn-dark btn-lg m-1"
+					href="<c:url value="/catalogo"/>">Catálogo</a></li>
+			</div>
 		</ul>
 	</nav>
 </div>

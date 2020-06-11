@@ -10,10 +10,10 @@ public class CatalogoBean {
 	// Inicia a lista de roupas com os itens abaixo
 	public CatalogoBean() {
 		roupas = new ArrayList<>();
-		roupas.add(novaRoupa("Camisa", "Roupa Masculina", 49.9f));
-		roupas.add(novaRoupa("Calça", "Roupa Masculina", 18.9f));
-		roupas.add(novaRoupa("Blusa", "Roupa Feminina", 15.9f));
-		roupas.add(novaRoupa("Vestido", "Roupa Feminina", 159.9f));
+		roupas.add(novaRoupa("Camisa Oficial", "Roupa Masculina", 49.90f));
+		roupas.add(novaRoupa("Calça Passeio", "Roupa Masculina", 18.90f));
+		roupas.add(novaRoupa("Blusa Treino", "Roupa Feminina", 15.90f));
+		roupas.add(novaRoupa("Blusa Polo", "Roupa Feminina", 159.90f));
 	}
 
 	// Funão para criar novas roupas.

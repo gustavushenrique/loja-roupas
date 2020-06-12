@@ -18,17 +18,16 @@ public class CatalogoBean {
 
 	// Funão para criar novas roupas.
 	private RoupaBean novaRoupa(String nome, String categoria, Float preco, String nomeImagem) {
-		
+
 		// Calcular o código de acordo com o tamanho d lista
-		
+
 		Integer codigo = roupas.size();
-		
+
 		RoupaBean roupaBean = new RoupaBean();
 		roupaBean.setNome(nome);
 		roupaBean.setCategoria(categoria);
 		roupaBean.setPreco(preco);
 		roupaBean.setNomeImagem(nomeImagem);
-
 		return roupaBean;
 	}
 
@@ -38,6 +37,35 @@ public class CatalogoBean {
 
 	public void setRoupas(List<RoupaBean> roupas) {
 		this.roupas = roupas;
+	}
+
+	// retorna as roupas filtradas de acordo com o codigo informado no filtro no
+	// navegador
+	public List<RoupaBean> getRoupasFiltradas(String codigoCategoria) {
+
+		if (codigoCategoria == null) {
+			return roupas;
+		}
+
+		int codigo = Integer.parseInt(codigoCategoria);
+
+		List<RoupaBean> roupasFiltradas = new ArrayList<>();
+
+		// 1 = masculino, 2 = feminino
+
+		for (RoupaBean roupa : roupas) {
+			if (codigo == 1) {
+				if ("Roupa Masculina".equals(roupa.getCategoria())) {
+					roupasFiltradas.add(roupa);
+				}
+			} else if (codigo == 2) {
+				if ("Roupa Feminina".equals(roupa.getCategoria())) {
+					roupasFiltradas.add(roupa);
+				}
+			}
+		}
+
+		return roupasFiltradas;
 	}
 
 }

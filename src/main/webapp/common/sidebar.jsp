@@ -14,7 +14,11 @@
 				<li><a class="btn btn-dark btn-lg m-1"
 					href="<c:url value="/catalogo"/>">Catálogo</a></li>
 			</div>
+
+			<div>
+				<li><a class="btn btn-dark btn-lg m-1"
+					href="<c:url value="/cart"/>">Carrinho</a></li>
+			</div>
 		</ul>
 	</nav>
 </div>
-

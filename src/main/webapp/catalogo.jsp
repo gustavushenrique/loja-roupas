@@ -5,9 +5,7 @@
 
 <!DOCTYPE html>
 <html>
-
 <c:import url="/common/header.jsp" />
-
 <body>
 	<div class="p-3 mb-2 bg-light">
 		<div class="container-fluid">
@@ -19,33 +17,36 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-12">
-								<h3>Catalogo</h3>
+								<h4>Catalogo</h4>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-6">
 								<c:forEach items="${roupas}" var="roupa">
-									<div class="card m-2 p-2">
-										<div class="card-header text-center">
-											<h5>${roupa.nome}</h5>
-										</div>
-										<div class="card-body">
-											<img class="card-img"
-												src="assets/img/catalogo/${roupa.nomeImagem }">
-											<div class="card-title text-center mt-3">
-												<div class="badge badge-dark">
-													<h6>
-														<fmt:formatNumber value="${roupa.preco }" type="currency"
-															currencySymbol="R$" />
-													</h6>
+									<form method="post">
+										<div class="card m-2 p-2">
+											<div class="card-header text-center">
+												<h5>${roupa.nome}</h5>
+											</div>
+											<div class="card-body">
+												<img class="card-img"
+													src="assets/img/catalogo/${roupa.nomeImagem }">
+												<div class="card-title text-center mt-3">
+													<div class="badge badge-dark">
+														<h6>
+															<fmt:formatNumber value="${roupa.preco }" type="currency"
+																currencySymbol="R$" />
+														</h6>
+													</div>
 												</div>
 											</div>
+											<div class="card-footer text-center">
+												<button type="submit" name="adicionar"
+													value="${roupa.codigo }" class="btn btn-dark">Adicionar</button>
+												<a class="btn btn-info text-white" href="#">Detalhes</a>
+											</div>
 										</div>
-										<div class="card-footer text-center">
-											<button class="btn btn-dark">Adicionar</button>
-											<a class="btn btn-info text-white" href="#">Detalhes</a>
-										</div>
-									</div>
+									</form>
 								</c:forEach>
 							</div>
 							<div class="col-3 text-center">
@@ -60,7 +61,7 @@
 										</select>
 									</div>
 									<div>
-										<button class="btn btn-success btn-lg active">Filtrar</button>
+										<button class="btn btn-success btn-lg active" type=>Filtrar</button>
 										<button class="btn btn-danger btn-lg active" type="reset">Reset</button>
 									</div>
 								</form>

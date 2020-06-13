@@ -52,14 +52,16 @@
 								<h5>Filtros</h5>
 								<form method="post">
 									<div class="form-group">
-										<select name="categoria" class="form-control">
+										<label for="categorias">Categorias</label> <select multiple
+											name="categoria" class="form-control" id="categorias">
 											<c:forEach items="${categorias}" var="categoria">
 												<option value="${categoria.codigo }">${categoria.nome}</option>
 											</c:forEach>
 										</select>
 									</div>
 									<div>
-										<button>Filtrar</button>
+										<button class="btn btn-success btn-lg active">Filtrar</button>
+										<button class="btn btn-danger btn-lg active" type="reset">Reset</button>
 									</div>
 								</form>
 							</div>

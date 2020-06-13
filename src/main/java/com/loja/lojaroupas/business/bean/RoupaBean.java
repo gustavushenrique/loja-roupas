@@ -4,6 +4,7 @@ public class RoupaBean {
 
 	private Integer codigo;
 	private String nome;
+	private Integer codigoCatergoria;
 	private String categoria;
 	private Float preco;
 	private String nomeImagem;
@@ -46,5 +47,13 @@ public class RoupaBean {
 
 	public void setNomeImagem(String nomeImagem) {
 		this.nomeImagem = nomeImagem;
+	}
+
+	public Integer getCodigoCatergoria() {
+		return codigoCatergoria;
+	}
+
+	public void setCodigoCatergoria(Integer codigoCatergoria) {
+		this.codigoCatergoria = codigoCatergoria;
 	}
 }

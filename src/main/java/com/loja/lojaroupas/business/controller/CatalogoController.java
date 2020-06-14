@@ -21,9 +21,6 @@ public class CatalogoController extends HttpServlet {
 
 	private CatalogoBean catalogoBean;
 
-	/**
-	 * @see HttpServlet#HttpServlet()
-	 */
 	public CatalogoController() {
 		super();
 
@@ -31,10 +28,6 @@ public class CatalogoController extends HttpServlet {
 		catalogoBean = new CatalogoBean();
 	}
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
@@ -80,10 +73,6 @@ public class CatalogoController extends HttpServlet {
 		request.getRequestDispatcher("/catalogo.jsp").forward(request, response);
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub

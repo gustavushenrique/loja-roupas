@@ -26,6 +26,7 @@ public class CatalogoBean {
 		Integer codigo = roupas.size();
 
 		RoupaBean roupaBean = new RoupaBean();
+		roupaBean.setCodigo(codigo);
 		roupaBean.setNome(nome);
 		roupaBean.setCodigoCatergoria(categoriaEnum.getCodigo());
 		roupaBean.setCategoria(categoriaEnum.getNome());
